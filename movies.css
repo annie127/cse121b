@@ -1,0 +1,155 @@
+body {
+    max-width: 1270px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FEFAE0;
+  }
+
+  h1, h2 {
+      font-family: Roboto, sans-serif;
+      color: #BC6C25;
+  }
+
+  h2 {
+      color:#283618;
+      margin-top: 30px;
+  }
+
+
+  #categories {
+    text-align: center;
+    line-height: 50px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #categories label {
+      font-family: Noto Sans Display, sans-serif;
+      font-size: 20px;
+      color: #283618;
+      border: 2px solid #BC6C25;
+      border-radius: 10px;
+      padding: 10px 20px;
+
+  }
+
+  input[type="radio"]{
+      width: 25px;
+      height: 25px;
+      border-color: #283618;
+      margin-right: 20px;
+
+  }
+
+  #movie-search {
+    font-family: Noto Sans Display, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+
+  #searchMovies {
+      width: 330px;
+      height: 40px;
+      margin: 10px 0 30px;
+      border-radius: 15px;
+      font-size: 18px;
+      border: 2px solid #BC6C25;
+      padding: 10px;
+  }
+
+  #submitButton{
+    margin-bottom: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #FEFAE0;
+    background-color: #283618;
+    padding: 10px 15px;
+  }
+
+
+  section {
+      font-family: Noto Sans Display, sans-serif;
+      border-style: solid;
+      border-color: #283618;
+      padding-bottom: 20px;
+      background-color: #eec799;
+  }
+
+  section p:nth-of-type(2) {
+      line-height: 30px;
+      padding: 0 10px;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  #outputMpvies {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      font-size: 25px;
+  }
+
+
+  @media only screen and (min-width: 541px) and (max-width: 815px) {
+    #outputMovies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      #categories label {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    #categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      input[type="radio"]{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+  
+    }
+
+  }
+
+  @media only screen and (min-width: 816px) {
+    #outputMovies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    #categories label {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    #categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      #submitButton{
+        border-radius: 25px;
+      }
+
+  }
+
+
+
+
+

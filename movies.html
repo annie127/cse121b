@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Browse Movies Per Category
+    </title>
+    <meta name="description"
+        content="Browse through different movie categories." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="movies.css" />
+    <script defer src="movies-search.js"></script>
+</head>
+
+<body>
+    
+    <h1>MovieSearch.com</h1>
+    <h2>Search for your favorite movies here.</h2>
+
+        <div id="movie-search">
+            <label><input type="text" id="searchMovies" placeholder="Enter a word or words from the title"/></label>
+            <button id="submitButton">Search a Movie</button>
+        </div>
+<div id="categories">
+    <label class="radio-button"><input type="radio" name="movie" value="upcoming"/>Upcoming</label>
+    <label class="radio-button"><input type="radio" name="movie" value="popular"/>Popular</label> 
+   <label class="radio-button"><input type="radio" name="movie" value="now-playing"/>Now Playing</label>
+    <label class="radio-button"><input type="radio" name="movie" value="top-rated"/>Top-Rated</label>
+</div>
+
+
+<div id="outputMovies"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Roboto", "Noto Sans Display"]
+            }
+        });
+    </script>
+</body>
+</html>
